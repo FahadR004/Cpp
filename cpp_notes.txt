@@ -1,0 +1,43 @@
+Compiled with g++
+g++ main.cpp -o main_cpp
+
+hello.cpp
+std::cout << "Hello World" << std::endl;
+// std::cout << "Hello World\n"; // For better performance
+// cout << "Hello World"; // If "using namespace std" is used, no need to type cout
+
+std::endl also flushes the buffer. Adding \n does not.
+When you print something in C++, it doesn't always go directly to the screen. Instead, the output is temporarily held in a small memory area called a buffer. For performance.
+std::cout -> standard character output
+<< -> output
+
+Data Types
+void - 0B
+wchar_t - 2B/4B
+char - 1B
+bool - 1B
+int - 4B
+float - 4B
+double - 8B
+
+string is part of the std namespace
+
+std::string name = "Fahad";
+
+const double PI = 3.14 for constants
+
+namespace.cpp
+Namespaces provide a solution for preventing name conflicts in large projects. Each entity needs a unique name. A namespace allows for identically named entities as long as the namespaces are different
+
+You can create your own namespaces by: 
+namespace first {
+    int x = 2;
+}
+
+:: -> scope resolution operator
+
+Safer alternative to using namespace std is doing
+using std::cout;
+using std::string;
+Otherwise, std actually has hundreds of different entities.
+For example, your conflict of data with std::data.
