@@ -41,3 +41,117 @@ using std::cout;
 using std::string;
 Otherwise, std actually has hundreds of different entities.
 For example, your conflict of data with std::data.
+
+typedef.cpp
+typedef is a reserved keyword used to create an additional name (alias) for another data type. New identifier for an existing type. Helps with readibilty and reduces typos
+
+New identifier typically has a _t at the end for type
+
+Replaced with using keyword. Better with templates
+
+Arithmetic Operators 
++, -, *, /, %
+
+Type Conversion
+Implicit - automatic
+Explicit  
+
+Implicit -> int x = 3.14; // Output on screen will display 3 (auto truncation -> converted to integer)
+
+double x = (int) 3.14;
+
+char x = 100; 
+std::cout << x // Output is d. ASCII
+
+input.cpp
+cout << (insertion operator)
+cint >> (extraction operator)
+
+When using string, always include string and don't rely on existing dependency of iostream (relying on transitive). Otherwise, it's bad practice
+
+For reading strings with spaces, use getline();
+
+Math Functions
+max(x,y), min(x,y)
+Use #include <cmath> for
+pow(num, power)
+sqrt(num)
+abs(-2) // -> 2 // How far away it is from zero
+round(x)
+ceil(x)
+floor(x)
+
+if, else if, else statements
+
+switch (month) {
+    case 1:
+        // Message
+        break;
+    case 2:
+        // Message
+        break;
+    default:
+        // Message
+        break;
+}
+
+Ternary Operator
+bool hungry = false;
+hungry ? std::cout << "You're hungry" : std::cout << "You're full"
+std::cout << (hungry ? "You're hungry" : "You're full")
+
+Logical Operators
+&&, ||, !
+
+Relational Operators
+<, >, <=, >=, ==
+
+String Methods
+std::string name = "Fahad";
+name.length()
+name.empty()
+name.clear()
+name.append(second_string)
+name.at(0) // index
+name.insert(index, char/string) // name.insert(1, "@")
+name.find('a')
+name.erase(begin_idx, end_idx{exclusive})
+
+Loops
+while, for, do while, break, continue
+
+Functions
+
+Overloaded functions simply means passing parameters of different Types
+
+Local Variables - declared inside a function or a block {}
+Global Variables - declared outside of all functions
+A nice line - "Functions can't see inside other functions"
+
+#include <iomanip>
+
+std::cout << "Your balance is: Rs." << std::setprecision(2) << std::fixed << balance << '\n';
+
+std::cin.clear(); 
+fflush(stdin);
+will clear any error flags when the standard input fails to interpret the input 
+clears the buffer because when we hit enter we have the newline character in our buffer
+The banking system program was crazy because the choice varaible was of type integer and you gave it a string.
+Better than fflush is:
+std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+#include <ctime>
+
+srand(time(0)) // For random seed
+int num = rand() % 3 + 1;
+
+arrays.cpp
+Array - a data structure that can hold multiple values are accessed by an index number
+
+Can only contain values of the same data type
+
+Simply printing array variables gives you the memory address where the first element is stored
+
+sizeof() - tells size in bytes for variable, data type, class, objects etc
+
+bubblesort.cpp
