@@ -155,3 +155,22 @@ Simply printing array variables gives you the memory address where the first ele
 sizeof() - tells size in bytes for variable, data type, class, objects etc
 
 bubblesort.cpp
+
+You can use const in parameters
+
+references.cpp + pointers.c (For side-by-side comparison)
+
+pointers.cpp
+Pointers are variables that store the address of another variable. They point to a address
+& - address of operator
+* - dereference operator
+
+Pointers naming convention is:
+pVariableName 
+Ex: int count = 10; int *pCount = &count;
+
+dynamic_memory.cpp
+Assigning memory after compilation at runtime. Memory is assigned in the heap rather than the stack
+
+
+templates.cpp
