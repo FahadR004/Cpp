@@ -1,0 +1,33 @@
+If auto exists, why define any data type at all?
+
+It exists in newer versions, not old ones.
+
+In inline, and without inline, you can see a difference in the two assembly files
+
+register is now deprecated. Your OS are now so secure that you can't directly access a processor's registers
+
+buhat saari data types aik jagah jama hojayen to wo union hai
+union is a specific structure in which variables share memory 
+
+virtual - changes execution or state
+
+Overloading:
+Same scope, different parameters, same/different definitions, compile time
+
+Overriding:
+Inheritance, same class names, type same, parameter same, definitions
+
+Association 
+Both classes can exist without eachother
+
+Aggregation
+Object created outside the class and passed during object instantiation
+
+Composition 
+Called and instantiated inside a class. Engine cannot exist without a car
+
+Constructor will be called at the time of object instantiation and assign the object memory
+
+Deconstructor will be called when object's memory is deallocated. Does not need to be called. Will be called automatically upon return from main function
+
+Example present in association.cpp

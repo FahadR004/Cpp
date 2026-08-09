@@ -10,6 +10,7 @@ std::endl also flushes the buffer. Adding \n does not.
 When you print something in C++, it doesn't always go directly to the screen. Instead, the output is temporarily held in a small memory area called a buffer. For performance.
 std::cout -> standard character output
 << -> output
+>> -> input
 
 Data Types
 void - 0B
@@ -174,3 +175,5 @@ Assigning memory after compilation at runtime. Memory is assigned in the heap ra
 
 
 templates.cpp
+
+stl - standard template library

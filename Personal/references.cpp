@@ -22,7 +22,9 @@ int main() {
     // x = y;
     // y = temp;
 
-     // swap(x, y); // Pass by value. A copy of the variables is made and passed to the function. Changes made to the parameters inside the function do not affect the original arguments.
+     // swap(int x, int y); // In function declaration if just x and y then, pass by value. A copy of the variables is made and passed to the function. Changes made to the parameters inside the function do not affect the original arguments.
+    // swap (int &x, int &y) // Pass by reference. Used to modify original variables. At call site, you simply pass in the variables as is. See practice example
+    // swap (int *x, int *y) // Raw pointers like in C. You pass in &x and &y at the call site of the function
     std::cout << "Address of X " << &x << "\n";
     std::cout << "Address of Y " << &y << "\n";
 
