@@ -1,3 +1,21 @@
+Interpreters tend to be more flexible than compilers, but are less efficient when running programs because the interpreting process needs to be done every time the program is run. This also means the interpreter must be installed on every machine where an interpreted program will be run. (Not true for compilers)
+
+Another advantage of compiled programs is that distributing a compiled program does not require distributing the source code. In a non-open-source environment, this is important for intellectual property (IP) protection purposes.
+
+If we’re careful, we can write a single C++ that will compile on every platform that has a C++ compiler! A program that is designed to run on multiple platforms is said to be cross-platform.
+
+HLL -> Compiler for x86 / Compiler for PowerPC HW / Compiler for RISC-V HW -> x86 executable / PowerPC executable / RISC-V executable    (Tree)
+
+"Add -ggdb to the command line for debug builds and -O2 -DNDEBUG for release builds. Use the debug build options for now.
+For GCC and Clang, the -O# option is used to control optimization settings. The most common options are as follows:
+    -O0 is the recommended optimization level for debug builds, as it disables optimization. This is the default setting.
+    -O2 is the recommended optimization level for release builds, as it applies optimizations that should be beneficial for all programs.
+    -O3 adds additional optimizations that may or may not perform better than -O2 depending on the specific program. Once your program is written, you can try compiling your release build with -O3 instead of -O2 and measure to see which is faster."
+
+In most cases, when the compiler encounters some kind of issue, it will emit diagnostic message (often called a diagnostic for short) -> diagnostic error / warning
+
+A statement is a type of instruction that causes the program to perform some action. This is because they are the smallest independent unit of computation in the C++ language.
+
 Compiled with g++
 g++ main.cpp -o main_cpp
 
